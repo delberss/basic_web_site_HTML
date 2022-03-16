@@ -1,21 +1,32 @@
 body {
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+ /*BANNER */
 
 #banner {
     height: 200px;
     width: 100%;
 
     background: yellow;
+    box-shadow: 1px 6px 20px 0px rgb(88 88 10);
     background-image: url("https://blog.simplusbr.com/wp-content/uploads/2020/09/oficina-mecanica-organizada.jpg");
 
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 #name_banner {
     color: yellow;
     font-size: 100px;
+    text-shadow: 5px 5px black;
     text-align: center;
+    line-height: 60px;
 }
+
+ /*MENU */
 
 #menu {
     width: 300px;
@@ -24,11 +35,16 @@ body {
     background: rgb(192, 23, 23);
     font-size: 18px;
 
+    border-top-right-radius: 10px;
+
+    position: fixed;
+    left: 0px;
 }
 
 
 #menu ul {
     text-align: left;
+    list-style-type: none;
     padding: 0px 20px;
 }
 
@@ -41,13 +57,53 @@ body {
     display: block;
     height: 40px;
     color: aliceblue;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.479);
+    margin-bottom: 5px;
+    line-height: 40px;
     text-align: center;
+    border-radius: 100px;
+    transition: 0.9s;
 }
+
+#menu ul li a:hover {
+    color: black;
+    background: aliceblue;
+    font-weight: bold;
+}
+
+ /* CONTEÚDO */
+
+#content {
+    margin-top: 220px;
+    margin-left: 320px;
+}
+
+#content li {
+    list-style-type: none;
+}
+
 
 .servico {
     background: gainsboro;
-    padding: 20px;
+    margin: 30px 30px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: -4px 3px 11px 0px rgb(96 14 25);
+}
+
+.servico:hover {
+    background: rgb(184, 182, 182);
+}
+
+.servico ul {
+    padding: 0px;
+}
+
+.servico li {
+    margin: auto;
+    padding-bottom: 5px;
 }
 
 .servico img {
@@ -55,6 +111,23 @@ body {
     height: 300px;
 }
 
+ /* RODAPÉ */
+
 footer {
     text-align: center;
+    padding: 20px;
+}
+
+footer h1 {
+    font-size: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(15, 113, 126);
+}
+footer a:hover {
+    font-size: 30px;
+    color: rgb(29, 179, 196);
+    text-shadow: 2px 2px black;
 }
